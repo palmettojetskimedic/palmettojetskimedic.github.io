@@ -3,101 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palmetto Jetski Medic | Repair & Maintenance</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Palmetto Jetski Medic</title>
+
+    <style>
+        :root {
+            --primary: #0a3d62;      /* deep marine blue */
+            --secondary: #1e5799;    /* lighter ocean blue */
+            --text-dark: #222;
+            --background: #e9ecef;   /* soft gray */
+            --white: #ffffff;
+            --accent-green: #28a745;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 25px;
+            text-align: center;
+        }
+
+        header img {
+            width: 160px;
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+        }
+
+        .contact-box {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+        }
+
+        form button {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: var(--secondary);
+        }
+
+        .tap-to-text {
+            display: block;
+            background: var(--accent-green);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Palmetto Jetski Medic Logo" class="logo-img">
-            <div class="logo-text">PALMETTO JETSKI MEDIC</div>
-        </div>
+<header>
+    <img src="logo.png" alt="Palmetto Jetski Medic Logo">
+    <h1>Palmetto Jetski Medic</h1>
+    <p>Repairs • Service • Maintenance • Mobile Diagnostics</p>
+</header>
 
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<section>
+    <h2>About Us</h2>
+    <p>
+        At <strong>Palmetto Jetski Medic</strong>, we specialize in jetski repairs, routine service, and full maintenance packages.
+        Whether you're dealing with engine issues, electrical problems, or seasonal upkeep, we’ve got you covered.
+    </p>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Jetski Repair & Maintenance You Can Trust</h1>
-        <p>Fast, reliable service for riders across the Carolina coast.</p>
-        <a href="#contact" class="btn">Book a Service</a>
-    </section>
+    <h2>Mobile Service Available</h2>
+    <p>
+        Can’t bring your jetski to us? No problem. We offer <strong>mobile service</strong> throughout the Grand Strand and surrounding areas.
+        We come to you for diagnostics, repairs, and maintenance when needed.
+    </p>
+</section>
 
-    <!-- SERVICES -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
+<section>
+    <h2>Recent Work</h2>
+    <p>A look inside the shop and some of the projects we’ve handled recently.</p>
 
-            <div class="service-card">
-                <h3>Full Diagnostics</h3>
-                <p>Engine checks, electrical testing, and full system scans.</p>
-            </div>
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Engine repair">
+        <img src="photo2.jpg" alt="Electrical stator work">
+        <img src="photo3.jpg" alt="Sea-Doo in shop">
+        <img src="photo4.jpg" alt="Jettrim seat">
+        <img src="photo5.jpg" alt="Kayak repair">
+        <img src="photo6.jpg" alt="Engine teardown">
+    </div>
+</section>
 
-            <div class="service-card">
-                <h3>Routine Maintenance</h3>
-                <p>Oil changes, spark plugs, impeller service, and tune‑ups.</p>
-            </div>
+<section class="contact-box">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 912-339-0157</p>
+    <p><strong>Email:</strong> palmettojetskimedic@gmail.com</p>
 
-            <div class="service-card">
-                <h3>Performance Upgrades</h3>
-                <p>ECU tuning, intake upgrades, exhaust systems, and more.</p>
-            </div>
+    <a class="tap-to-text" href="sms:9123390157">Tap to Text Us</a>
 
-            <div class="service-card">
-                <h3>Emergency Repairs</h3>
-                <p>Fast turnaround for breakdowns, leaks, and mechanical failures.</p>
-            </div>
+    <h3>Send a Message</h3>
+    <form action="https://formspree.io/f/mwkagqzv" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-            <div class="service-card">
-                <h3>Mobile Service</h3>
-                <p>We come to you for on‑site repairs, diagnostics, and maintenance—dockside or at home.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>
-            Palmetto Jetski Medic is a locally owned jetski repair and maintenance service 
-            serving the Grand Strand and Carolina coast. We specialize in fast diagnostics, 
-            high‑quality repairs, and reliable mobile service to keep you on the water.
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to schedule service? Reach out below.</p>
-
-        <div class="contact-box">
-            <p><strong>Phone:</strong> <a href="tel:9123390157">912‑339‑0157</a></p>
-            <p><strong>Email:</strong> <a href="mailto:palmettojetskimedic@gmail.com">palmettojetskimedic@gmail.com</a></p>
-            <p><strong>Location:</strong> Little River, South Carolina</p>
-        </div>
-
-        <form class="contact-form" action="https://formsubmit.co/palmettojetskimedic@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="How can we help you?" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- TAP TO TEXT BUTTON -->
-    <a href="sms:9123390157" class="text-button">Text Us</a>
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 Palmetto Jetski Medic — All Rights Reserved
-    </footer>
+<footer>
+    <p>© 2026 Palmetto Jetski Medic — Little River, SC</p>
+</footer>
 
 </body>
 </html>
